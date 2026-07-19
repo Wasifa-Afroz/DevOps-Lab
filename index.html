@@ -1,14 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Letter Strings</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wasifa — CS Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <canvas id="canvas"></canvas>
 
-  <script src="Strings.js"></script>
+<nav class="nav">
+  <span class="nav__brand">wasifa<span class="cursor">_</span></span>
+  <div class="nav__links">
+    <a href="#work">work</a>
+    <a href="#stack">stack</a>
+    <a href="#contact">contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <p class="mono muted"><span class="prompt">$</span> whoami</p>
+  <h1>Wasifa</h1>
+  <p class="hero__role">Final-year CS student &middot; builds AI systems that have to work in production</p>
+  <p class="hero__bio">
+    Currently building JUW IntelliBot, a RAG-based university chatbot, as my final year
+    project. Outside class, I ship smaller AI tools and pull them apart in cybersecurity labs.
+  </p>
+  <a href="#contact" class="btn">get in touch</a>
+</header>
+
+<main>
+
+  <section class="section" id="work">
+    <h2>Projects</h2>
+
+    <article class="card">
+      <h3>JUW IntelliBot</h3>
+      <p>
+        AI-powered university chatbot — three-tier retrieval (Firebase keyword to RAG chunks
+        to website fallback) behind department-scoped RBAC, with bilingual English / Roman Urdu support.
+        Built with a teammate as my Final Year Project.
+      </p>
+      <p class="mono card__stack">Node.js &middot; Firebase &middot; LangChain &middot; Groq API &middot; React</p>
+    </article>
+
+    <article class="card">
+      <h3>Quiz Hub</h3>
+      <p>AI-generated exam prep app for Federal Board students, built with Google AI Studio and Gemini.</p>
+      <p class="mono card__stack">Gemini &middot; Google AI Studio</p>
+    </article>
+
+    <article class="card">
+      <h3>RAM Dump Analyzer</h3>
+      <p>Browser-based forensic tool for a Cybersecurity Expo, with a Python companion script and a full write-up.</p>
+      <p class="mono card__stack">JavaScript &middot; Python</p>
+    </article>
+  </section>
+
+  <section class="section" id="stack">
+    <h2>Stack</h2>
+    <div class="tag-row">
+      <span class="tag">JavaScript</span>
+      <span class="tag">Node.js / Express</span>
+      <span class="tag">React</span>
+      <span class="tag">Python</span>
+      <span class="tag">LangChain</span>
+      <span class="tag">Firebase</span>
+      <span class="tag">GCP</span>
+      <span class="tag">Metasploit</span>
+      <span class="tag">nmap</span>
+      <span class="tag">RBAC design</span>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <div class="contact-row">
+      <a href="mailto:your.email@example.com">your.email@example.com</a>
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">linkedin.com/in/yourusername</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p class="mono muted">© 2026 Wasifa</p>
+</footer>
+
 </body>
 </html>
